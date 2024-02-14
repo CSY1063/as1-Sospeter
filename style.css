@@ -1,13 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    max-width: 100%;
 }
 
 nav ul{
     display: flex;
     justify-content: space-around;
     background-color: green;
-    min-height: 2.5em;
+    min-height: 4.5em;
     align-items: center;
 }
 
@@ -17,8 +18,48 @@ nav ul li{
     cursor: pointer;
 }
 header{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-color: antiquewhite;
     text-align: center;
+}
+
+.header-content {
+
+}
+
+.about {
+    min-height: 100vh;
+    background-color: #DCF2F1;
+}
+
+.projects {
+    background-color: #EEF5FF;
+}
+
+.projects-area{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    padding: 5em;
+}
+
+.project-tile {
+    max-width: 30em;
+}
+
+.video-demo {
+    min-height: 100vh;
+    background-color: #FFFBF5;
+    padding: 5em;
+}
+
+.report {
+    min-height: 100vh;
+    background-color: #F3FDE8;
+}
+
+footer {
+    min-height: 50vh;
+    background-color: #EDE4FF;
 }
