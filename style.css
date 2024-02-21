@@ -9,12 +9,11 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: 
-        "nav"
         "header"
+        "nav"
         "main"
         "footer"
     ;
-    background-color: #3D3B40;
 }
 
 nav {
@@ -24,26 +23,41 @@ nav {
 nav ul{
     display: flex;
     justify-content: space-around;
-    background-color: green;
-    min-height: 4.5em;
+    height: 4.5em;
     align-items: center;
+    background-color: green;
 }
 
 nav ul li{
     list-style: none;
-    color:antiquewhite;
     cursor: pointer;
-}
-header{
-    min-height: 100vh;
-    width: 100%;
-    background-color: antiquewhite;
-    text-align: center; 
-    grid-area: header;
+} 
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
 }
 
+header{
+    height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    text-align: center; 
+    grid-area: header;
+    color: #fff;
+}
+
+.logo {
+    position: absolute;
+    left: 4vw;
+    top: 5vh;
+    color: #fff;
+}
+
+
+
 .header-content {
-    padding: 35vh 0 31vh 0;
+    padding: 35vh 0 35vh 0;
     text-transform: uppercase;
 }
 
@@ -57,42 +71,58 @@ header{
 
 .scroll-btn {
     margin: 4em;
-    padding: 1em;
+    padding: 1.5em 4em;
+    border:none;
+    color:#11009E;
+    border-radius: 2.5em 2.5em;
+
+}
+
+.scroll-btn:hover {
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    transition: 0.2s;
 }
 
 
 main{
     grid-area: main;
-    max-width: 80%;
-    margin: auto;
 }
 
-.about, .projects, .report {
-    padding-top: 4em;
-}
-
-.about {
-    min-height: 100vh;
-    background-color: #DCF2F1;
+.projects, .report {
+    padding-top: 5em;
 }
 
 .projects {
     background-color: #EEF5FF;
 }
 
+
 .projects-area{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
     grid-template-rows: auto;
     padding: 5em;
+    
 }
 
 .project-tile {
-    max-width: 30em;
+    width: 25vw;
+    margin: auto;
+    padding: 2em;
+}
+
+.project-tile p {
+    background-color: grey;
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
 }
 
 .video-demo {
-    min-height: 100vh;
+    height: 100vh;
+    width: 75vw;
     background-color: #FFFBF5;
     padding: 5em;
 }
