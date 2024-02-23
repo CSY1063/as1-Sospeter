@@ -143,6 +143,30 @@ main{
     padding: 1em 0;
 }
 
+.project-tile img {
+    border-radius: 0.5em;
+}
+
+.project-tile p {
+    background-color: grey;
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    border-radius: 0 0 0.5em 0.5em;
+
+}
+
+.report {
+    min-height: 100vh;
+    background-color: #F3FDE8;
+}
+
+footer {
+    min-height: 50vh;
+    background-color: #EDE4FF;
+    grid-area: footer;
+}
+
 @media (max-width: 800px){
     .projects-area {
         grid-template-columns: 100%;
@@ -157,24 +181,3 @@ main{
         padding: 1em 0;
     }
 }
-
-
-
-.project-tile p {
-    background-color: grey;
-    color: #fff;
-    padding: 1.5em;
-    text-align: center;
-}
-
-.report {
-    min-height: 100vh;
-    background-color: #F3FDE8;
-}
-
-footer {
-    min-height: 50vh;
-    background-color: #EDE4FF;
-    grid-area: footer;
-}
-
