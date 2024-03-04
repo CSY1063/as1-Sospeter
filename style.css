@@ -94,14 +94,19 @@ header{
     font-size: 1em;
 }
 
+.home-btn{
+    text-align: center;
+}
+
 .scroll-btn {
-    padding: 1.5em 4.5em;
+    padding: 1.5em 5em;
     border:none;
     color:#fff;
     border-radius: 4em 4em;
     cursor: pointer;
     background-color: #00b4dc;
     border: 1px solid #00b4dc;
+    margin: 4em;
 
 }
 
