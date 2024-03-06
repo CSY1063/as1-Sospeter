@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+p{
+    font-size: 1.5em;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "nav"
+        "header"
+        "main"
+        "footer"
+    ;
+    background-image:url("images/banner_design_with_abstract1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #172babcf;
+    border-bottom: 2px solid rgb(201, 201, 255);
+    
+}
+
+.nav-btn {
+    display: none;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    height: 4.5em;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    cursor: pointer;
+} 
+
+nav ul li a{
+    color:#fff;
+    text-decoration: none;
+    padding: 1em 2em ;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav ul li a:hover {
+    background-color: #4ecffc ;
+    transition: 0.2s;
+    box-shadow: 1px 3px 12px 3px #000000;
+    
+}
+
+header{
+    min-height: 70vh;
+    width: 96%;
+    text-align: center; 
+    grid-area: header;
+    color: #fff;
+    background-color: rgba(0,0,0,0.537);
+    display: block;
+    margin: 0 auto 8em auto;
+    border-radius: 0 0 1em 1em;
+    box-shadow: 1px 5px 12px 5px #000000;
+
+}
+
+@keyframes pulsating-header {
+    0% {}
+    50% {}
+    100% {}
+}
+
+
+.header-content h1{
+    font-size: 3.5em;
+    
+}
+
+
+.logo {
+    color: #fff;
+    background-color: transparent;
+    padding:0 3em;
+}
+
+
+
+.header-content {
+    text-transform: uppercase;
+    padding-top: 10em;
+}
+
+.header-content p {
+    font-size: 1.2em;
+}
+
+.home-btn{
+    text-align: center;
+}
+
+.scroll-btn {
+    padding: 1.5em 5em;
+    border:none;
+    color:#fff;
+    border-radius: 4em 4em;
+    cursor: pointer;
+    background-image: linear-gradient(19deg, #5c6cff, #0b2dc4) ;
+    border: 1px solid #1634b4;
+    margin: 4.5em;
+    box-shadow: 2px 2px 5px 1px #000;
+
+}
+
+.scroll-btn:hover {
+    color: #000;
+    background: transparent;
+    border: 1px solid #000;
+    transition: 0.2s;
+}
+
+.smiley-text{
+    max-width: 80%;
+    display: block;
+    text-align: justify;
+    margin: auto;
+    padding: 4em 0 0 0;
+    color: #000000;
+}
+
+
+main{
+    grid-area: main;
+    background-color: #ffffff96;
+    backdrop-filter: blur(10px);
+}
+
+
+.projects {
+    padding: 6em 4.5em;
+    margin: auto;
+    border-radius: 0.7em 0.7em 0 0;
+}
+
+.projects h1 {
+    font-size: 2.5em;
+    margin: 0.3em 0;
+    text-transform: uppercase;
+}
+
+.projects p {
+    font-size: 1.5em;
+    color: #001464;
+}
+
+
+.projects-area{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+    margin: 6em 0;
+
+}
+
+.project-tile {
+    width: 28vw;
+    margin:auto;
+    padding-bottom: 1em;
+}
+
+.project-tile img {
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+.project-tile p {
+    background-image: linear-gradient(19deg , #1634b4 , #32b4e4  );
+    color: #fff;
+    padding: 1.1em;
+    text-align: center;
+    border-radius: 0 0 0.5em 0.5em;
+
+}
+
+.video-demo {
+    padding: 10%;
+    text-align: center;
+}
+
+.video-demo h1 {
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+
+.report {
+    padding: 10% 20%;
+    margin: auto;
+    text-align: justify;
+}
+.report h1{
+    padding-bottom: 2em;
+    font-size: 2em;
+}
+.report p {
+    padding-bottom: 1em;
+}
+
+
+
+form{
+    border: 2px solid #fff;
+    margin: 5em auto;
+    border-radius: 0.5em;
+    padding: 1em;
+    width: 30em;
+    background-color: #475fff;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+label {
+    padding: 1em 0.5em;
+    margin: 0.5em auto;
+    display: block;
+}
+
+form input, textarea {
+    padding: 0.9em 0.5em;
+    margin: 0.5em auto;
+    width: 25vw;
+    border: none;
+    border-radius: 0.4em;
+    display: block;
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+textarea {
+    resize: none;
+
+}
+
+
+footer {
+    background-image: linear-gradient(19deg, #010d3bc4 , #1d42e4c5 );
+    grid-area: footer;
+    backdrop-filter: blur(10px);
+    width: 99%;
+    margin: 8px auto;
+    border-radius: 10px;
+
+}
+
+footer p{
+    color: #fff;
+}
+
+.footer-area{
+    padding: 7em 0 0.6em 0;
+    max-width: 85%;
+    margin: auto;
+}
+
+.footer-links p{
+    font-size: 11pt;
+}
+
+.contact-btn {
+    padding: 1.4em 4em;
+    border: none;
+    background-color: #c1c1c1;
+    margin: 3em 0 10em 0;
+    border-radius: 3px;
+    color: #001464;
+}
+
+.contact-btn:hover{
+    background-color: #fff;
+    color: #B721FF;
+}
+
+.footer-links {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer-links li {
+    list-style: none;
+    display: inline;
+} 
+
+.footer-links li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2em;
+    margin-right: 0.5em;
+}
+
+.footer-links li a:hover{
+    color:#00b4dc;
+}
+
+@media (max-width: 800px){
+    .projects-area {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        margin:8em 0;
+    }
+    .project-tile {
+        width: 100%;
+        margin:auto;
+        padding-bottom: 1em;
+    }   
+    
+    nav ul{
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+        display: block;
+        height: 100vh;
+        position: absolute;
+        left: 100%;
+        background-color: #000b5c;
+        transition: 1s;
+        z-index: 999;
+    }
+
+    header{
+        height: 98vh;
+        width: 96%;
+    
+    }
+
+    .header-content {
+        padding-top: 5em;
+    }
+
+    .header-content h1{
+        font-size: 2.5em;
+    }
+
+    .header-content p{
+        font-size: 1em;
+    }
+    nav ul li {
+        margin: 1em 0;
+    }
+
+    nav ul li a{
+        color:#fff;
+        text-decoration: none;
+        padding:0.4em 2em;
+        font-size: 2em;
+    }
+    .logo {
+        display: none;
+    }
+    .nav-btn {
+        display: block;
+        padding:10px 15px;
+        margin: 0.2em;
+        border-radius: 50%;
+        border: none;
+        background: transparent;
+        color: #fff;
+        font-size: 2em;
+    }
+
+    .nav-btn:hover{
+        background-color: #fff;
+        color: #001464;
+        transition: 0.3s;
+    }
+    .scroll-btn {
+        padding: 1em 2.5em;
+        margin: 5em 1em;
+    
+    }
+    footer {
+        margin: 2
+        px auto;
+    
+    }
+}
