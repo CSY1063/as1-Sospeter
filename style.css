@@ -93,12 +93,6 @@ header{
 
 }
 
-@keyframes pulsating-header {
-    0% {}
-    50% {}
-    100% {}
-}
-
 
 .header-content h1{
     font-size: 3.5em;
@@ -336,86 +330,4 @@ footer p{
     color:#00b4dc;
 }
 
-@media (max-width: 800px){
-    .projects-area {
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-        margin:8em 0;
-    }
-    .project-tile {
-        width: 100%;
-        margin:auto;
-        padding-bottom: 1em;
-    }   
-    
-    nav ul{
-        display: block;
-    }
 
-    nav {
-        width: 100%;
-        display: block;
-        height: 100vh;
-        position: absolute;
-        left: -50em;
-        background-color: #000b5c;
-        transition: 1s;
-        z-index: 999;
-    }
-
-    header{
-        height: 98vh;
-        width: 96%;
-    
-    }
-
-    .header-content {
-        padding-top: 5em;
-    }
-
-    .header-content h1{
-        font-size: 2.5em;
-    }
-
-    .header-content p{
-        font-size: 1em;
-    }
-    nav ul li {
-        margin: 1.5em 0;
-    }
-
-    nav ul li a{
-        color:#fff;
-        text-decoration: none;
-        padding:0.4em 2em;
-        font-size: 2em;
-    }
-    .logo {
-        display: none;
-    }
-    .nav-btn {
-        display: block;
-        padding:0.6em;
-        margin: 0.4em;
-        border-radius: 50%;
-        border: none;
-        background: transparent;
-        color: #fff;
-        font-size: 2em;
-    }
-
-    .nav-btn:hover{
-        background-color: #fff;
-        color: #001464;
-        transition: 0.3s;
-    }
-    .scroll-btn {
-        padding: 1em 2.5em;
-        margin: 5em 1em;
-    
-    }
-    footer {
-        margin: 2px auto;
-    
-    }
-}
