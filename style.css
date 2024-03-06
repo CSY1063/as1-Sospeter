@@ -357,7 +357,7 @@ footer p{
         display: block;
         height: 100vh;
         position: absolute;
-        left: 100%;
+        left: -50em;
         background-color: #000b5c;
         transition: 1s;
         z-index: 999;
