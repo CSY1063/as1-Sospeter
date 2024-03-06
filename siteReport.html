@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Report</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0">
     <script src="https://kit.fontawesome.com/5b8fb5fe8f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Patrick+Hand&family=Poiret+One&display=swap" rel="stylesheet">
+    <script src="javascript.js"></script>
 </head>
 <body>
 
@@ -19,7 +20,9 @@
             </span>
         </a>
 
-        <button class="close" id="close">x</button>
+        <button class="nav-btn" id="close" onclick="closeNav()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
 
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -38,6 +41,9 @@
     </nav>
     
     <main>
+        <button class="nav-btn" id="open" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
         <section class="report">
 
@@ -53,14 +59,22 @@
             Alias id necessitatibus illo reiciendis deleniti ipsam nisi dolore voluptates aliquid magnam? Libero consectetur mollitia velit. Eos alias culpa vitae iure voluptas hic, incidunt pariatur laboriosam, voluptate eius magnam dolorem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab cumque nobis nemo neque consequatur obcaecati. Reprehenderit sapiente adipisci quis quia laudantium dolorum ad, at cupiditate fugit officiis ex voluptatum provident.
                 </p>
 
-            
+            <h1>Validation Screenshots</h1>
+            <h2>Index.html</h2>
+            <img src="images/imagePlaceholder.jpeg" alt="index page validation screenshot">
+            <h2>Projects.html</h2>
+            <img src="images/imagePlaceholder.jpeg" alt="index page validation screenshot">
+            <h2>Video Demo.html</h2>
+            <img src="images/imagePlaceholder.jpeg" alt="index page validation screenshot">
+            <h2>Site Report.html</h2>
+            <img src="images/imagePlaceholder.jpeg" alt="index page validation screenshot">
         </section>
 
     </main>
 
     <footer>
         <div class="footer-area">
-        <p>Have a project you would like to work on together? </br>Let's bring your vision to life.</p>
+        <p>Have a project you would like to work on together? Let's bring your vision to life.</p>
         <button class="contact-btn">Contact Me</button>
         <div class="footer-links">
             <ul>
@@ -68,7 +82,7 @@
                 <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-codepen"></i></a></li>
             </ul>
-            <p>&copy;24 Sospeter Kedogo &#x2022 All Rights Reserved</p>
+            <p> &copy; 24 Sospeter Kedogo &#x2022 All Rights Reserved</p>
         </div>
         </div>
 

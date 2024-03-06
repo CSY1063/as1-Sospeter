@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/5b8fb5fe8f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poiret+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Patrick+Hand&family=Poiret+One&display=swap" rel="stylesheet">
+    <script src="javascript.js"></script>
 </head>
 <body>
 
@@ -20,7 +21,9 @@
             </span>
         </a>
 
-        <button class="close" id="close">x</button>
+        <button class="nav-btn" id="close" onclick="closeNav()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
 
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -40,6 +43,10 @@
     
 
     <main>
+
+        <button class="nav-btn" id="open" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
         <section>
             <form action="#" target="_blank">
