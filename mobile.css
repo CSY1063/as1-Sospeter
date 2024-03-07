@@ -1,21 +1,4 @@
 @media (max-width: 800px){
-    .projects {
-        padding: 1.5em 1.5em;
-    }
-    .projects-area {
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-        margin:8em 0;
-    }
-    .project-tile {
-        width: 100%;
-        margin:auto;
-        padding-bottom: 1em;
-    } 
-    
-    .report {
-        padding: 8% 10%;
-    }
     
     nav ul{
         display: block;
@@ -39,7 +22,7 @@
     }
 
     .header-content {
-        padding-top: 5.5em;
+        padding-top: 8em;
     }
 
     .header-content h1{
@@ -84,6 +67,31 @@
     
     }
 
+    .projects {
+        padding: 1.2em 1.5em;
+    }
+    .projects-area {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        margin:5em 0;
+    }
+    .project-tile {
+        width: 100%;
+        margin:auto;
+        padding-bottom: 1em;
+    } 
+    
+    .report {
+        padding: 8% 10%;
+    }
+    .screenshot{ 
+        padding: 1em 0 1em 0;
+    
+    }
+    .screenshot img {
+        max-width: 17em;
+    }
+
     form{
         padding: 0.1em;
         width: 90%;
@@ -92,7 +100,7 @@
     
     label {
         padding: 1em 0.5em;
-        margin: 0.2em auto 0.5 auto;
+        margin: 0.2em auto 0.5em auto;
         display: block;
     }
     
@@ -116,5 +124,11 @@
     }
     .footer-links {
         display: block;
+    }
+    .footer-links li a{
+        font-size: 1em;
+    }
+    .footer-links p{
+        font-size: 0.6em;
     }
 }
