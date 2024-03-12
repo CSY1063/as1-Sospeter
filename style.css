@@ -123,18 +123,21 @@ header{
 
 .home-btn{
     text-align: center;
+    margin: 1em 0 5em 0;
 }
 
 .scroll-btn {
-    padding: 1.5em 5em;
+    padding: 1em 4.5em;
     border:none;
     color:#fff;
     border-radius: 4em 4em;
     cursor: pointer;
     background-image: linear-gradient(19deg, #5c6cff, #0b2dc4) ;
     border: 1px solid #1634b4;
-    margin: 4.5em;
+    margin: 4em;
+    font-size: 1em;
     box-shadow: 2px 2px 5px 1px #000;
+    font-family: "Poiret One", sans-serif;
 
 }
 
@@ -157,7 +160,7 @@ header{
 
 main{
     grid-area: main;
-    background-color: #ffffff96;
+    background-color: #ffffffbe;
     backdrop-filter: blur(10px);
 }
 
@@ -339,7 +342,6 @@ footer p{
     color: #001464;
     border-radius: 4em 4em 4em 4em;
     font-family: "Poiret One", sans-serif;
-    font-weight: bold;
     font-size: 1em;
     transition: 0.3s;
 }
