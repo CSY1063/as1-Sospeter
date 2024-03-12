@@ -32,6 +32,9 @@
     .header-content p{
         font-size: 0.9em;
     }
+    nav ul{
+        margin-top: 6em;
+    }
     nav ul li {
         margin: 1.5em 0;
     }
@@ -39,11 +42,17 @@
     nav ul li a{
         color:#fff;
         text-decoration: none;
-        padding:0.4em 2em;
+        padding:0.3em 1.7em;
         font-size: 2em;
     }
     .logo {
         display: none;
+    }
+
+    .phone-logo {
+        display: block;
+        width: 4em;
+        padding: 1.3em 0.7em;
     }
     .nav-btn {
         display: block;
@@ -54,6 +63,9 @@
         background: transparent;
         color: #fff;
         font-size: 1.7em;
+        position: absolute;
+        top: 0.1em;
+        right: 0.2em;
     }
 
     .nav-btn:hover{
@@ -68,7 +80,7 @@
     }
 
     .projects {
-        padding: 1.2em 1.5em;
+        padding: 0.5em 1.5em;
     }
     .projects-area {
         grid-template-columns: 100%;
@@ -82,7 +94,7 @@
     } 
     
     .report {
-        padding: 8% 10%;
+        padding: 4% 10%;
     }
     .screenshot{ 
         padding: 1em 0 1em 0;
@@ -95,7 +107,7 @@
     form{
         padding: 0.1em;
         width: 90%;
-        margin: 0.5em auto 5em auto;
+        margin: 0 auto 5em auto;
     }
     
     label {

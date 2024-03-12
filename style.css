@@ -56,7 +56,9 @@ nav {
     display: none;
 }
 
-
+.phone-logo {
+    display: none;
+}
 
 
 nav ul{
@@ -104,7 +106,8 @@ header{
 
 .logo {
     color: #fff;
-    padding:0 3em;
+    margin-left: 2.5em;
+    width: 5.3em;
 }
 
 
