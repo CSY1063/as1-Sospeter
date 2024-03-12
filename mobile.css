@@ -47,7 +47,7 @@
     }
     .nav-btn {
         display: block;
-        padding:0.4em;
+        padding:0.4em 0.5em;
         margin: 0.3em;
         border-radius: 50%;
         border: none;
@@ -78,7 +78,7 @@
     .project-tile {
         width: 100%;
         margin:auto;
-        padding-bottom: 1em;
+        margin-bottom: 1em;
     } 
     
     .report {
